@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema);
 
 // **Login Route**: Save username and password into the database
-app.post('/login', async (req, res) => {
+app.post('/signup', async (req, res) => {
   const { username, password } = req.body;
 
   // Save the username and password to the database (not recommended for production, it's better for authentication)

